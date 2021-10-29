@@ -1,4 +1,4 @@
-# Cisco-Tetration GET and DELETE (sensors) requests
+# Cisco Tetration GET and DELETE (sensors) requests
 This is an example of sending GET request to obtain a list of sensors present to the Cisco Tetration cluster (pre-checks-get.py)
 In order to use it, code needs to be adapted according to the parameters you have:
 Here: 
