@@ -46,5 +46,4 @@ This design is made for cases if the sensor would be removed mistakenly, so it w
 To check the removed sensors, execute 'post-checks-get' and 'deleted_servers_list.txt' will be generated with the list of removed sensors with the UNIX time-format frame.
 
 ! These scripts are adapted for working with the 'sensors' only, in order to use it for 'scopes' you will need to change resp.json()['results'] to resp.json().get('results) and change 'uuid' - parameter of the output to 'id'.
-In the 'to_delete_uuids.py' - restclient.delete('/sensors/'+string) should be changed to restclient.delete('/scopes/'+string)![image](https://user-images.githubusercontent.com/73656732/139432245-580fe39d-02a1-41a2-97d2-fedf9b9d51c3.png)
-
+In the 'to_delete_uuids.py' - restclient.delete('/sensors/'+string) should be changed to restclient.delete('/scopes/'+string)
