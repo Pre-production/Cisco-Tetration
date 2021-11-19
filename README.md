@@ -1,4 +1,4 @@
-# Cisco Tetration GET and DELETE (sensors) requests
+# Cisco Tetration GET and DELETE (sensors/scopes objects) requests
 This is an example of sending GET request to obtain a list of sensors objects present to the Cisco Tetration cluster (pre-checks-get.py)
 In order to use it, code needs to be adapted according to the parameters you have: 
 API_ENDPOINT="https://10.10.10.10"
