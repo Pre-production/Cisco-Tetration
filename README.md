@@ -1,11 +1,10 @@
 # Cisco Tetration GET and DELETE (sensors) requests
 This is an example of sending GET request to obtain a list of sensors present to the Cisco Tetration cluster (pre-checks-get.py)
-In order to use it, code needs to be adapted according to the parameters you have:
-Here: 
+In order to use it, code needs to be adapted according to the parameters you have: 
 API_ENDPOINT="https://10.10.10.10"
 should be specified the IP address or domain name of your Tetration cluster. 
 It's always better to specify the IP rather than the Domain name, because if you are working from the DMZ Jump host most probably you will not have a DNS resolver on it.
-! This should be done for the files 'post-checks-get.py' as well as for 'to_delete_uuids.py'.
+!!! This should be done for the files 'post-checks-get.py' as well as for 'to_delete_uuids.py'.
 
 Next, you have to generate API Keys on the Tetration GUI, navigate to the Gears sign on the top right corner, and choose 'API Keys' in the drop-down. Then mark all the limitations and generate your keys in JSON format (api_credentials.json). Download the file with the keys and move it to the same directory where 'pre-checks-get.py' is located.
 Those are all modifications you need to implement to make this script work for your cluster.
