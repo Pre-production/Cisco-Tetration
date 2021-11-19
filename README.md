@@ -10,7 +10,7 @@ Next, you have to generate API Keys on the Tetration GUI, navigate to the Gears 
 Those are all modifications you need to implement to make this script work for your cluster.
 
 One more important thing is that you could possibly do not have connectivity to the internet if you are accessing the Tetration cluster from the DMZ Jump host (Windows or Linux).
-In this case, connectivity to the internet is needed to obtain package 'tetpyclient'.
+In this case, connectivity to the internet is needed to import package 'tetpyclient'.
 In case if you have a Windows Jump host, to bypass this issue and to avoid manual transferring of the package from your local machine to the Jump host you need to 'freeze' this script. In order to do this, you need to download 'pyinstaller' tool: C:\Users\yourusername>pip install pyinstaller
 Identify the directory where pyinstaller.exe was installed to and copy it.
 Then navigate to the directory where your script is located and type the command in CLI:
