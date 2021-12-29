@@ -4,7 +4,7 @@ In order to use it, code needs to be adapted according to the parameters you hav
 API_ENDPOINT="https://10.10.10.10"
 should be specified the IP address or domain name of your Tetration cluster. 
 It's always better to specify the IP rather than the Domain name, because if you are working from the DMZ Jump host most probably you will not have a DNS resolver on it.
-!!! This should be done for the files 'post-checks-get.py' and 'to_delete_uuids.py' as well.
+This should be done for the files 'post-checks-get.py' and 'to_delete_uuids.py' as well.
 
 Next, you have to generate API Keys on the Tetration GUI, navigate to the Gears sign on the top right corner, and choose 'API Keys' in the drop-down. Then mark all the limitations and generate your keys in JSON format (api_credentials.json). Download the file with the keys and move it to the same directory where 'pre-checks-get.py' is located.
 Those are all modifications you need to implement to make this script work for your cluster.
@@ -19,7 +19,7 @@ C:\Users\yourusername\Documents\some_folder_with_script>*paste directory where p
 
 After that, you will see folders _pycache_, build, dist being created. Navigate to 'dist' folder and find a 'freezed' version of the file 'pre-checks-get.py' > pre-checks-get.exe
 Now you can copy pre-checks-get.exe to your Jump host and execute it from the GUI simply double-clicking on it.
-!!! This should be done for the files 'post-checks-get.py' and 'to_delete_uuids.py' as well if you need them to be executed from DMZ Jump host.
+This should be done for the files 'post-checks-get.py' and 'to_delete_uuids.py' as well if you need them to be executed from DMZ Jump host.
 
 * In case if you have a Linux Jump host you will have to do the pretty same procedure, but at the end, you will have .bin file generated instead of .exe
 
